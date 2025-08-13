@@ -4,7 +4,7 @@
 
 RingFmt is a comprehensive command-line tool for formatting Ring programming language code. It supports automatic style detection and conversion between three different Ring language styles:
 
-- **Classic Style**: Traditional Ring syntax with `see/give`, `func...ok`, `if...ok`
+- **Classic Style**: Traditional Ring syntax with `see/give`, `func...`, `if...ok`
 - **Natural Style**: Modified syntax with `put/get`, `def...end`, `if...end`
 - **Modern Style**: C-like syntax with `print()`, `func{}`, `if(){}`
 
@@ -140,7 +140,7 @@ def greetUser cName
     else
         put "Hello stranger!"
     end
-
+end
 ```
 
 ### Modern Style
