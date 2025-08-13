@@ -1,6 +1,6 @@
 /*
 	Title :	Ring Code Formatter (RingFmt)
-	Date  : 2025.01.12
+	Date  : 2025.08.12
 	Author: Azzeddine
 	Description: A command-line tool for formatting Ring code with different language styles
 */

@@ -1,6 +1,6 @@
 /*
 	Title :	Ring Language Style Detector
-	Date  : 2025.01.12
+	Date  : 2025.08.12
 	Author: Azzeddine
 	Description: Automatically detects the current language style of Ring code
 */
