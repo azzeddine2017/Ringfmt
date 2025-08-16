@@ -1,0 +1,1 @@
+ring2exe ringfmt.ring 

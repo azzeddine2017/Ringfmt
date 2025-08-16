@@ -6,21 +6,7 @@
 
 func getParameters cProgramName
 	aPara = sysargv
-	cEXEFileName = exefilename()
-
-	# Extract just the filename from full path
-	nPos = 0
-	for i = len(cEXEFileName) to 1 step -1 {
-		if cEXEFileName[i] = "\" or cEXEFileName[i] = "/" {
-			nPos = i
-			exit
-		}
-	}
-	if nPos > 0 {
-		cEXEFileName = substr(cEXEFileName, nPos + 1)
-	}
-
-	cEXEFileName = lower(cEXEFileName)
+	cEXEFileName =  lower(JustFileName(exefilename()))
 
 	# Remove .exe from the file name
 	cEXEFileName = substr(cEXEFileName, ".exe", "")
