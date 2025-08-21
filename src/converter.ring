@@ -509,7 +509,8 @@ class LanguageStyleConverter
 
 		# Add braces after control structures
 		cResult = addSimpleBraces(cResult)
-
+		# Add braces
+    //cResult = addBracesAfterKeywords(cResult)
 		return cResult
 
 	func convertIOToModernStyle cCode

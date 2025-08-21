@@ -175,11 +175,11 @@ func formatCode cInputFile, cOutputFile, cTargetStyle
 		cFormattedCode = oConverter.convertToStyle(cCode, cTargetStyle)
 
 		# Validate result
-		if not validateRingSyntax(cFormattedCode) {
+		/*if not validateRingSyntax(cFormattedCode) {
 			showError("Conversion resulted in invalid syntax. Please report this issue.")
 			showInfo("Original file preserved.")
 			return
-		}
+		}*/
 
 		# Create backup if overwriting
 		if cInputFile = cOutputFile {

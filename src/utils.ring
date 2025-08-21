@@ -49,24 +49,19 @@ func writeFileWithEncoding cFileName, cContent
 
 # Ring syntax validation
 func validateRingSyntax cCode
-	try {
-		# Basic syntax validation
-		if not validateBrackets(cCode) {
-			return false
-		}
-		
-		if not validateQuotes(cCode) {
-			return false
-		}
-		
-		if not validateKeywords(cCode) {
-			return false
-		}
-		
-		return true
-	catch
-		return false
-	}
+	
+			cTemp = "tempFile.ring"
+			write(cTemp, cCode)
+			cValidate = systemCmd("ring " + cTemp + " -norun")
+			remove(cTemp)
+			if cValidate = ""{
+					return true
+			else
+				? "Ring syntax not valid: " + cValidate 
+				return false
+			}	
+			
+	
 
 func validateBrackets cCode
 	# Validate bracket matching

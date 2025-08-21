@@ -71,7 +71,7 @@ if oStudent.isPassingGrade()
     put "Student is passing!" + nl
 else
     put "Student needs improvement" + nl
-ok
+end
 
 put "=== Classic Style Test Complete ===" + nl
 
@@ -110,3 +110,4 @@ class Student
             return false
         end
     end
+end
